@@ -8,8 +8,6 @@ description: 根据场景、听众熟悉度与沟通目标，从已有产品材�
 
 先决定这场沟通要促成什么，再选择怎么讲。专业判断、故事感和具象方法的比重随场景变化，不把任何演讲技巧当作通用开场模板。
 
-本 skill 将 lecture-deck 的逐字讲述、现场动作与跨页桥接思路用于产品沟通，结合实际讲稿迭代重新编写。仅借鉴工作方法，未引入其实现代码。参考：[lecture-deck](https://github.com/RinDig/lecture-deck-skill/blob/master/SKILL.md)。不依赖其安装或建页代码。
-
 ## 1. 判断场景与沟通任务
 
 读 [references/scenarios.md](references/scenarios.md)。优先从用户指令与上下文确定：
