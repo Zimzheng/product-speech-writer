@@ -101,6 +101,10 @@ python3 -m unittest discover -s tests -v
 
 原始材料可能包含非公开信息：示例为虚构数据；渲染器不会上传资料。AI 助手处理材料的数据政策仍取决于所用宿主和模型。
 
+## 致谢
+
+在早期探索讲稿组织方式时，参考了 [lecture-deck](https://github.com/RinDig/lecture-deck-skill) 对口播、演讲提示与转场的组织思路，感谢作者公开分享。本项目的技能指令与 HTML 渲染实现独立编写。
+
 ## 许可
 
 本项目代码与文档按 [MIT License](LICENSE) 提供。使用者仍应对输入材料的使用权和输出事实负责。
