@@ -103,8 +103,6 @@ Checks cover variable chapter counts, inline optional depth, timing budgets, esc
 
 The renderer does not upload material. Source-processing data policies depend on the host assistant and model. Public examples contain no private project data.
 
-## Provenance and license
-
-The spoken-prose, delivery-cue and transition approach was inspired by [lecture-deck](https://github.com/RinDig/lecture-deck-skill). Instructions and rendering code were written independently and require neither its code nor installation.
+## License
 
 Code and documentation are provided under the [MIT License](LICENSE). Users remain responsible for source rights and factual claims.
