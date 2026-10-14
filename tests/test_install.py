@@ -14,7 +14,7 @@ SPEC.loader.exec_module(MODULE)
 class InstallTests(unittest.TestCase):
     def test_explicit_destination_and_refuse_overwrite(self):
         with tempfile.TemporaryDirectory() as td:
-            target = Path(td) / 'skills' / 'product-talk-script'
+            target = Path(td) / 'skills' / 'product-speech-writer'
             command = [sys.executable, str(ROOT / 'scripts/install_local.py'),
                        '--destination', str(target)]
             first = subprocess.run(command, capture_output=True, text=True)
@@ -35,7 +35,7 @@ class InstallTests(unittest.TestCase):
                            '--tool', tool, '--scope', 'project', '--project', str(project)]
                 result = subprocess.run(command, capture_output=True, text=True)
                 self.assertEqual(result.returncode, 0, result.stderr)
-                self.assertTrue((project / relative / 'product-talk-script' / 'SKILL.md').is_file())
+                self.assertTrue((project / relative / 'product-speech-writer' / 'SKILL.md').is_file())
 
 
 if __name__ == '__main__':

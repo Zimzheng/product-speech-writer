@@ -1,5 +1,5 @@
 ---
-name: product-talk-script
+name: product-speech-writer
 license: MIT
 description: 根据场景、听众熟悉度与沟通目标，从已有产品材料生成或改写汇报、评审、路演、用户介绍、内部串讲和培训讲稿；支持现场提示、就地展开的深入口播及可读 HTML。用于准备怎么讲，不默认重做演示页面或制作幻灯片。
 ---

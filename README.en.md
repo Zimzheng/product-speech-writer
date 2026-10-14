@@ -1,8 +1,8 @@
-# Product Talk Script
+# Product Speech Writer
 
 [简体中文](README.md) | [English](README.en.md)
 
-An agent skill for writing audience-aware product talks from existing material, with an offline HTML speaker view.
+Understand product materials in context and for your audience, then generate ready-to-deliver speech scripts and HTML speaker views.
 
 For software, physical products, services and platforms. The audience, communication goal and product stage determine the structure, presentation approach and level of detail.
 
@@ -25,11 +25,11 @@ Download and extract the skill, then enter the directory containing `SKILL.md`. 
 
 | Tool | User-level directory | Project-level directory | Invocation / official documentation |
 | --- | --- | --- | --- |
-| Codex | `~/.agents/skills/product-talk-script/` | `.agents/skills/product-talk-script/` | `$product-talk-script`; [docs](https://learn.chatgpt.com/docs/build-skills) |
-| Claude Code | `~/.claude/skills/product-talk-script/` | `.claude/skills/product-talk-script/` | `/product-talk-script`; [docs](https://code.claude.com/docs/en/skills) |
-| Cursor | `~/.cursor/skills/product-talk-script/` | `.cursor/skills/product-talk-script/` | Name the skill in Agent chat or select it from `/`; [docs](https://cursor.com/docs/skills) |
-| GitHub Copilot | `~/.copilot/skills/product-talk-script/` | `.github/skills/product-talk-script/` | Request it in an Agent surface that supports skills; [docs](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) |
-| OpenCode | `~/.config/opencode/skills/product-talk-script/` | `.opencode/skills/product-talk-script/` | Ask the agent to load it with the skill tool; [docs](https://opencode.ai/docs/skills/) |
+| Codex | `~/.agents/skills/product-speech-writer/` | `.agents/skills/product-speech-writer/` | `$product-speech-writer`; [docs](https://learn.chatgpt.com/docs/build-skills) |
+| Claude Code | `~/.claude/skills/product-speech-writer/` | `.claude/skills/product-speech-writer/` | `/product-speech-writer`; [docs](https://code.claude.com/docs/en/skills) |
+| Cursor | `~/.cursor/skills/product-speech-writer/` | `.cursor/skills/product-speech-writer/` | Name the skill in Agent chat or select it from `/`; [docs](https://cursor.com/docs/skills) |
+| GitHub Copilot | `~/.copilot/skills/product-speech-writer/` | `.github/skills/product-speech-writer/` | Request it in an Agent surface that supports skills; [docs](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) |
+| OpenCode | `~/.config/opencode/skills/product-speech-writer/` | `.opencode/skills/product-speech-writer/` | Ask the agent to load it with the skill tool; [docs](https://opencode.ai/docs/skills/) |
 
 Choose the relevant user-level command:
 
@@ -41,10 +41,10 @@ python3 scripts/install_local.py --tool copilot
 python3 scripts/install_local.py --tool opencode
 ```
 
-For a shared project installation, place the extracted `product-talk-script/` folder at the target project's root, then run:
+For a shared project installation, place the extracted `product-speech-writer/` folder at the target project's root, then run:
 
 ```sh
-python3 product-talk-script/scripts/install_local.py --tool claude-code --scope project --project .
+python3 product-speech-writer/scripts/install_local.py --tool claude-code --scope project --project .
 ```
 
 Replace `claude-code` with the relevant tool. Use `--destination` for a custom final skill folder. Directory conventions were checked against the linked official documentation on 2026-10-14. Local-copy tests pass; this is not end-to-end validation in every host. Cloud agents may require project files or separate synchronization.
@@ -56,13 +56,13 @@ For tools without native skills support, ask the assistant to read `SKILL.md` an
 The prompts below use Codex syntax. For other tools, use their invocation method above or name the skill in natural language:
 
 ```text
-Use $product-talk-script. This is a ten-minute progress update for stakeholders
+Use $product-speech-writer. This is a ten-minute progress update for stakeholders
 who already know the product. Focus on changes, evidence, risks and decisions.
 Keep Q&A separate and produce an HTML speaker view.
 ```
 
 ```text
-Use $product-talk-script to introduce a physical product to first-time users.
+Use $product-speech-writer to introduce a physical product to first-time users.
 Explain value through concrete use situations and clearly distinguish concept
 benefits from tested results.
 ```

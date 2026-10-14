@@ -44,9 +44,9 @@ def main():
     elif args.scope == 'project':
         if not args.project:
             parser.error('--project is required for project scope')
-        target = args.project / PROJECT_ROOTS[args.tool] / 'product-talk-script'
+        target = args.project / PROJECT_ROOTS[args.tool] / 'product-speech-writer'
     else:
-        target = Path.home() / ROOTS[args.tool] / 'product-talk-script'
+        target = Path.home() / ROOTS[args.tool] / 'product-speech-writer'
     try:
         print(install(Path(__file__).resolve().parents[1], target))
     except (ValueError, OSError) as exc:

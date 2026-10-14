@@ -1,8 +1,8 @@
-# Product Talk Script
+# Product Speech Writer
 
 [简体中文](README.md) | [English](README.en.md)
 
-根据沟通场景、听众熟悉度与目标，从已有材料生成专业、具象、能直接讲的产品讲稿，并输出离线 HTML 演讲者页面。
+根据场景与听众理解产品材料，生成可直接讲的讲稿和 HTML 演讲者页面。
 
 适用于软件、实体产品、服务和平台。根据听众、沟通目标与产品阶段，选择合适的内容结构、演讲方法和表达深度。
 
@@ -25,11 +25,11 @@
 
 | 工具 | 用户级目录（跨项目） | 项目级目录 | 调用方式 / 官方说明 |
 | --- | --- | --- | --- |
-| Codex | `~/.agents/skills/product-talk-script/` | `.agents/skills/product-talk-script/` | `$product-talk-script`；[官方文档](https://learn.chatgpt.com/docs/build-skills) |
-| Claude Code | `~/.claude/skills/product-talk-script/` | `.claude/skills/product-talk-script/` | `/product-talk-script`；[官方文档](https://code.claude.com/docs/en/skills) |
-| Cursor | `~/.cursor/skills/product-talk-script/` | `.cursor/skills/product-talk-script/` | 在 Agent 对话中明确指定技能，或从 `/` 菜单选择；[官方文档](https://cursor.com/docs/skills) |
-| GitHub Copilot | `~/.copilot/skills/product-talk-script/` | `.github/skills/product-talk-script/` | 在支持 skills 的 Agent 场景中请求使用该技能；[官方文档](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) |
-| OpenCode | `~/.config/opencode/skills/product-talk-script/` | `.opencode/skills/product-talk-script/` | 请求使用该技能，由 Agent 通过 skill 工具加载；[官方文档](https://opencode.ai/docs/skills/) |
+| Codex | `~/.agents/skills/product-speech-writer/` | `.agents/skills/product-speech-writer/` | `$product-speech-writer`；[官方文档](https://learn.chatgpt.com/docs/build-skills) |
+| Claude Code | `~/.claude/skills/product-speech-writer/` | `.claude/skills/product-speech-writer/` | `/product-speech-writer`；[官方文档](https://code.claude.com/docs/en/skills) |
+| Cursor | `~/.cursor/skills/product-speech-writer/` | `.cursor/skills/product-speech-writer/` | 在 Agent 对话中明确指定技能，或从 `/` 菜单选择；[官方文档](https://cursor.com/docs/skills) |
+| GitHub Copilot | `~/.copilot/skills/product-speech-writer/` | `.github/skills/product-speech-writer/` | 在支持 skills 的 Agent 场景中请求使用该技能；[官方文档](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/customize-cloud-agent/add-skills) |
+| OpenCode | `~/.config/opencode/skills/product-speech-writer/` | `.opencode/skills/product-speech-writer/` | 请求使用该技能，由 Agent 通过 skill 工具加载；[官方文档](https://opencode.ai/docs/skills/) |
 
 任选一个对应的用户级安装命令：
 
@@ -41,10 +41,10 @@ python3 scripts/install_local.py --tool copilot
 python3 scripts/install_local.py --tool opencode
 ```
 
-要让项目成员共享技能，用项目级安装。例如在目标项目根目录保存解压后的 `product-talk-script/` 文件夹，然后运行：
+要让项目成员共享技能，用项目级安装。例如在目标项目根目录保存解压后的 `product-speech-writer/` 文件夹，然后运行：
 
 ```sh
-python3 product-talk-script/scripts/install_local.py --tool claude-code --scope project --project .
+python3 product-speech-writer/scripts/install_local.py --tool claude-code --scope project --project .
 ```
 
 将 `claude-code` 换成相应工具即可。自定义目录用 `--destination` 指向最终技能文件夹。目录与发现方式按以上官方文档核对于 2026-10-14；本地复制测试通过，但不代表每个工具均已完成运行验证。云端 Agent 可能需要项目级文件或额外同步，不能仅凭本机用户级安装认为云端已可用。
@@ -56,12 +56,12 @@ Codex 较旧版本或不同发行版的技能目录可能不同；请按其实�
 以下是 Codex 调用示例；其他工具按上表使用相应调用方式，或自然语言指定技能名：
 
 ```text
-请使用 $product-talk-script。这次面向熟悉产品的负责人做阶段汇报，
+请使用 $product-speech-writer。这次面向熟悉产品的负责人做阶段汇报，
 10 分钟，问答另计。根据附件重点讲变化、证据、风险与待决策事项，输出 HTML。
 ```
 
 ```text
-请使用 $product-talk-script。向第一次接触这款实体产品的用户介绍，
+请使用 $product-speech-writer。向第一次接触这款实体产品的用户介绍，
 用具体体验解释价值与采用条件，明确区分产品概念和测试结果。
 ```
 
