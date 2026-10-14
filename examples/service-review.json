@@ -1,0 +1,29 @@
+{
+  "title": "预约服务试点复盘（虚构示例）",
+  "subtitle": "熟悉业务的负责人 · 以判断与决策为主",
+  "language": "zh-CN",
+  "palette": "classic",
+  "chapters": [
+    {
+      "id": "decision",
+      "title": "本次判断与待确认事项",
+      "seconds": 60,
+      "blocks": [
+        {
+          "id": "service-conclusion",
+          "label": "先讲结论",
+          "text": "这是一份虚构示例。试点复盘需要先判断服务流程是否适合扩展，再讨论下一阶段覆盖范围。\n\n本次重点是预约后的确认与到店衔接，验收口径还需要业务负责人共同确定。",
+          "emphasis": [{"text": "验收口径还需要业务负责人共同确定", "kind": "boundary"}],
+          "depth": [{"label": "为什么先对齐验收", "text": "服务承诺、人员排班和用户等待体验共同决定交付质量，单个环节完成不能代表完整体验成立。"}]
+        }
+      ],
+      "transition": "下面说明怎样观察完整服务过程。"
+    },
+    {
+      "id": "measure",
+      "title": "用服务体验检验方案",
+      "seconds": 60,
+      "blocks": [{"id": "service-method", "text": "可以记录预约确认、到店接待与完成服务的衔接情况，再结合用户反馈确定改进重点。\n\n具体采样和标准要与服务团队约定，本示例没有实际经营结果。", "emphasis": [{"text": "本示例没有实际经营结果", "kind": "boundary"}]}]
+    }
+  ]
+}

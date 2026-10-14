@@ -1,0 +1,4 @@
+interface:
+  display_name: "产品讲稿与场景叙事"
+  short_description: "依据听众与沟通目标选择叙事，深读产品材料并生成可讲、可展开的讲稿"
+  default_prompt: "请使用 $product-talk-script，根据我的材料和沟通场景生成专业、具象且适合现场使用的产品讲稿。"

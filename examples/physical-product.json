@@ -1,0 +1,29 @@
+{
+  "title": "A travel cup: a user introduction (fictional)",
+  "language": "en",
+  "palette": "monochrome",
+  "subtitle": "First-time users · Product concept, not a tested claim",
+  "chapters": [
+    {
+      "id": "context",
+      "title": "Start with a concrete use situation",
+      "seconds": 45,
+      "blocks": [
+        {
+          "id": "cup-situation",
+          "label": "Illustrative scenario",
+          "text": "Imagine carrying a drink while moving between a train and your workplace. The product concept focuses on carrying, opening and cleaning the cup.\n\nThis is a fictional concept, not evidence of tested performance.",
+          "emphasis": [{"text": "not evidence of tested performance", "kind": "boundary"}],
+          "depth": [{"label": "What to demonstrate", "text": "A prototype demonstration should let people judge grip, opening and cleaning. Leak resistance and durability need appropriate tests before making claims."}]
+        }
+      ],
+      "transition": "Now connect those situations to a concrete evaluation method."
+    },
+    {
+      "id": "evaluation",
+      "title": "Demonstrate and validate",
+      "seconds": 45,
+      "blocks": [{"id": "cup-method", "text": "Ask users to try the handling sequence and explain where it feels awkward. Combine that feedback with product tests appropriate to the final design.\n\nBenefits should be supported by evidence, not just by the story.", "emphasis": [{"text": "Benefits should be supported by evidence", "kind": "key"}]}]
+    }
+  ]
+}
